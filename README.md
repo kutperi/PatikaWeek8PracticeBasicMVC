@@ -1,1 +1,1 @@
-ASP.NET MVC kullanılarak müşteri ve sipariş bilgilerinin gösterildiği bir uygulama.
+ASP.NET MVC kullanarak müşteri ve sipariş bilgilerinin gösterildiği bir uygulama pratiği
