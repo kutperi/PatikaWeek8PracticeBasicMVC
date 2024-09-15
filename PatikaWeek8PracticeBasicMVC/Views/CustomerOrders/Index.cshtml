@@ -1,0 +1,43 @@
+﻿@using PatikaWeek8PracticeBasicMVC.Models
+
+@model CustomerOrderViewModel
+
+<head>
+    <title>Müşteri Bilgileri</title>
+</head>
+
+<h1>Müşteri Bilgileri</h1>
+
+<p><strong>Id:</strong> @Model.customer.Id</p>
+<p><strong>First Name:</strong> @Model.customer.FirstName</p>
+<p><strong>Last Name:</strong> @Model.customer.LastName</p>
+<p><strong>Email:</strong> @Model.customer.Email</p>
+
+
+
+
+
+<table class="table">
+    <thead>Müşteri Sipariş Tablosu</thead>
+    <tbody>
+        <tr>
+            <td>ID</td>
+            <td>Ürün Adı</td>
+            <td>Fiyat</td>
+            <td>Miktar</td>
+
+        </tr>
+        @foreach (var order in Model.orders)
+        {
+            <tr>
+                <td>@order.Id</td>
+                <td>@order.ProductName</td>
+                <td>@order.Price</td>
+                <td>@order.Quantity</td>
+
+            </tr>
+            
+        }
+
+    </tbody>
+</table>
